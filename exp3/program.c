@@ -1,3 +1,5 @@
+//DFA
+
 #include <stdio.h>
 #include <string.h>
 typedef struct DFA
@@ -43,13 +45,13 @@ int main()
     // accept the input symbols
     for (int i = 0; i < d.noi; i++)
     {
-        printf("Enter input symbol no %d : ", i + 1);
+        printf("Enter input symbol No. %d : ", i + 1);
         scanf(" %c", &d.inputSymbols[i]);
     }
     // accept the final states
     for (int i = 0; i < d.nof; i++)
     {
-        printf("Enter final state no %d : ", i + 1);
+        printf("Enter final state No. %d : ", i + 1);
         scanf(" %d", &d.final[i]);
     }
     printf("\nEnter transitions: ");
@@ -93,11 +95,11 @@ int main()
         }
         if (flag == 1 && checkFinalState(stateCounter, d) == 1)
         {
-            printf("%s is accepted. ", string);
+            printf("%s is accepted.", string);
         }
         else
         {
-            printf("%s is not accpeted. ", string);
+            printf("%s is not accpeted.", string);
         }
     } while (1);
 

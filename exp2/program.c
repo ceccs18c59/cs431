@@ -1,3 +1,5 @@
+// Lexical Analyser using C lang.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
